@@ -1,3 +1,8 @@
+// Look into the page source where a xml url is available as the data source.
+// Grab the content and save it locally in a file.
+// Run 'groovy SportSystemsDataParser.groovy input.xml output.csv' 
+// Upload the result csv file to serpie base and follow the instructions. 
+
 def root = new XmlSlurper().parse(new File(args[0]))
 def output = new File(args[1])
 output.write ''
